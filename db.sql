@@ -1,0 +1,12 @@
+create database dojo;
+
+use dojo;
+
+CREATE TABLE alumnos (
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(50) NOT NULL,
+email VARCHAR(50) NOT NULL,
+telefono VARCHAR(50),
+disciplina VARCHAR(50) NOT NULL,
+createAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
